@@ -7,23 +7,33 @@ export default function Contact() {
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const form = e.currentTarget;
-    const data = new URLSearchParams(new FormData(form) as unknown as Record<string, string>);
-    setLoading(true);
-    try {
-      await fetch('https://readdy.ai/api/form/d7ek1lq1i3t7k9116mog', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: data.toString(),
-      });
+  e.preventDefault();
+  const form = e.currentTarget;
+  const formData = new FormData(form);
+
+  setLoading(true);
+
+  try {
+    const response = await fetch('https://formspree.io/f/maqamnwk', {
+      method: 'POST',
+      body: formData,
+      headers: {
+        Accept: 'application/json',
+      },
+    });
+
+    if (response.ok) {
       setSubmitted(true);
-    } catch {
-      setSubmitted(true);
-    } finally {
-      setLoading(false);
+      form.reset();
+    } else {
+      alert('Submission failed. Please try again.');
     }
-  };
+  } catch (error) {
+    alert('Network error. Please try again.');
+  } finally {
+    setLoading(false);
+  }
+};
 
   return (
     <section id="contact" className="py-24 bg-gray-50">
