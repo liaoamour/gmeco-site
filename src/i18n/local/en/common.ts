@@ -29,7 +29,7 @@ const common = {
   product_slippers_f2: 'Custom logo available',
   product_slippers_f3: 'MOQ: 1,000 pairs',
   product_slippers_f4: 'Lead time: 20–30 days',
-  product_slippers_f5: '4 models available',
+  product_slippers_f5: 'Multiple models available',
   product_slippers_f6: 'Multiple colors & sizes',
   product_slippers_btn: 'Get Pricing',
   product_slippers_sizes: 'Standard size / Large size',
