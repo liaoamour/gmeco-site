@@ -26,7 +26,7 @@ const common = {
   product_slippers_f2: 'Aangepast logo beschikbaar',
   product_slippers_f3: 'MOQ: 1.000 paar',
   product_slippers_f4: 'Levertijd: 20–30 dagen',
-  product_slippers_f5: '4 modellen beschikbaar',
+  product_slippers_f5: 'Meerdere modellen beschikbaar',
   product_slippers_f6: 'Meerdere kleuren en maten',
   product_slippers_btn: 'Prijzen opvragen',
   product_slippers_sizes: 'Standaardmaat / Grote maat',
