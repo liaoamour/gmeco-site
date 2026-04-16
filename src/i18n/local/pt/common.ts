@@ -26,7 +26,7 @@ const common = {
   product_slippers_f2: 'Logo personalizado disponível',
   product_slippers_f3: 'MOQ: 1.000 pares',
   product_slippers_f4: 'Prazo: 20–30 dias',
-  product_slippers_f5: '4 modelos disponíveis',
+  product_slippers_f5: 'Vários modelos disponíveis',
   product_slippers_f6: 'Múltiplas cores e tamanhos',
   product_slippers_btn: 'Obter preços',
   product_slippers_sizes: 'Tamanho padrão / Tamanho grande',
